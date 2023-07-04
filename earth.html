@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Planets fact site</title>
+</head>
+<body>
+
+  <!-- Header Start -->
+
+  <header>
+    <div class="header__container">
+     
+      <div class="header__nav">
+        <ul>
+          <li><a href="#">Mercury</a></li>
+          <li><a href="#">Venus</a></li>
+          <li><a href="#">Earth</a></li>
+          <li><a href="#">Mars</a></li>
+          <li><a href="#">Jupiter</a></li>
+          <li><a href="#">Saturn</a></li>
+          <li><a href="#">Uranus</a></li>
+          <li><a href="#">Neptune</a></li>
+        </ul>
+      </div>
+    </div>
+<div class="grid_container">
+    <img src="./assets/planet-earth.svg"   class="mainEarth" alt="logo">
+    <img src="./assets/planet-earth-internal.svg"  class="inpix hide" alt="logo">
+    <img src="./assets/geology-earth.png"  class="geopix hide" alt="logo">
+
+    <div class="grid_side">
+    <h1>Earth</h1>
+  
+
+  <!-- Overview Content Start -->
+<div class="over">Third planet from the Sun and the only known planet to harbor life. 
+  About 29.2% of Earth's surface is land with remaining 70.8% is 
+  covered with water. Earth's distance from the Sun, physical properties 
+  and geological history have allowed life to evolve and thrive.
+
+  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth -->
+</div>
+
+  <!-- Overview Content End -->
+
+
+  <!-- Internal Structure Content Start -->
+<div class="inter hide">
+  Earth's interior, like that of the other terrestrial planets, is divided 
+  into layers by their chemical or physical (rheological) properties. The 
+  outer layer is a chemically distinct silicate solid crust, which is 
+  underlain by a highly viscous solid mantle.
+
+  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth#Internal_structure -->
+</div>
+  <!-- Internal Structure Content End -->
+
+  <!-- Surface Geology Content Start -->
+<div class="surface hide">
+  The total surface area of Earth is about 510 million km2. The continental 
+  crust consists of lower density material such as the igneous rocks granite 
+  and andesite. Less common is basalt, a denser volcanic rock that is the 
+  primary constituent of the ocean floors.
+
+  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth#Surface -->
+</div>
+  <!-- Surface Geology Content End -->
+<div class="panels">
+  <div class="one" onmouseover="myFunction()" >
+  <span class="num">01 </span> 
+  Overview
+  </div>
+<div class="two" onmousemove="myFunction2()">
+  <span class="num">02 </span> 
+  Internal Structure
+</div>
+<div class="three"  onmouseover="myFunction3()" >
+  <span class="num">03 </span>
+  Surface Geology
+
+</div>
+</div>
+</div>
+</div>
+<div class="end"> 
+  <div class="box_one">
+    <div class="box_one__content">
+      <div class="box_one__content__title">
+        Rotation Time
+      </div>
+      <div class="box_one__content__text">
+        0.99 Days
+      </div>
+    </div>
+  </div>
+  <div class="box_two">
+    <div class="box_two__content">
+      <div class="box_two__content__title">
+        Revolution Time
+      </div>
+      <div class="box_two__content__text">
+        365.26 Days
+      </div>
+    </div>
+  </div>
+  <div class="box_three">
+    <div class="box_three__content">
+      <div class="box_three__content__title">
+        Radius
+      </div>
+      <div class="box_three__content__text">
+        6,371 KM
+      </div>
+    </div>
+  </div>
+  <div class="box_four">
+    <div class="box_four__content">
+      <div class="box_four__content__title">
+        Average Temp.
+      </div>
+      <div class="box_four__content__text">
+        16°c
+      </div>
+    </div>
+  
+</div>
+  <script src="app.js"></script>
+</body>
+</html>
