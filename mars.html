@@ -3,61 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Planets fact site</title>
 </head>
 <body>
-  Mars
+  <div class="header__container">
+     
+    <div class="header__nav">
+      <ul>
+        <li><a href="#">Mercury</a></li>
+        <li><a href="#">Venus</a></li>
+        <li><a href="/earth.html">Earth</a></li>
+        <li><a href="/mars.html">Mars</a></li>
+        <li><a href="#">Jupiter</a></li>
+        <li><a href="#">Saturn</a></li>
+        <li><a href="#">Uranus</a></li>
+        <li><a href="#">Neptune</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="grid_container">
+    <img src="./assets/planet-mars.svg"   class="mainEarth" id="marsPix" alt="logo">
+    <img src="./assets/planet-mars-internal.svg"  class="inpix hide" id="marsPix" alt="logo">
+    <img src="./assets/geology-mars.png"  class="geopix hide" alt="logo">
+
+    <div class="grid_side">
+        <div class="side_text">
+    <h1 class="earth-text">Mars</h1>
 
   <!-- Overview Content Start -->
 
-  Mars is the fourth planet from the Sun and the second-smallest planet 
+  <div class="over">Mars is the fourth planet from the Sun and the second-smallest planet 
   in the Solar System, being larger than only Mercury. In English, Mars 
   carries the name of the Roman god of war and is often referred to as 
   the "Red Planet".
-
+  <br>
   Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars -->
-
+</div>
   <!-- Overview Content End -->
 
   <!-- Internal Structure Content Start -->
 
-  Like Earth, Mars has differentiated into a dense metallic core overlaid 
+  <div class="inter hide">Like Earth, Mars has differentiated into a dense metallic core overlaid 
   by less dense materials. Scientists initially determined that the core 
   is at least partially liquid. Current models of its interior imply a 
   core consisting primarily of iron and nickel with about 16–17% sulfur.
-
+  <br>
   Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars#Internal_structure -->
-
+</div>
   <!-- Internal Structure Content End -->
 
   <!-- Surface Geology Content Start -->
 
-  Mars is a terrestrial planet whose surface consists of minerals containing 
+  <div class="surface hide">Mars is a terrestrial planet whose surface consists of minerals containing 
   silicon and oxygen, metals, and other elements that typically make up rock. 
   The surface is primarily composed of tholeiitic basalt, although parts are 
   more silica-rich than typical basalt.
-
+  <br>
   Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars#Surface_geology -->
-
+</div>
+</div>
   <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  1.03 Days
-
-  Revolution Time
-  1.88 Years
-
-  Radius
-  3,389.5 KM
-
-  Average Temp.
-  -28°c
+  <div class="panels">
+    <div class="one" onmouseover="myFunction()" >
+    <span class="num">01 </span> 
+    Overview
+    </div>
+  <div class="two" onmousemove="myFunction2()">
+    <span class="num">02 </span> 
+    Internal Structure
+  </div>
+  <div class="three"  onmouseover="myFunction3()" >
+    <span class="num">03 </span>
+    Surface Geology
+  
+  </div>
+  </div>
+</div>
+</div>
+<div class="end"> 
+  <div class="box_one">
+    <div class="box_one__content">
+      <div class="box_one__content__title">
+        Rotation Time
+      </div>
+      <div class="box_one__content__text">
+        1.03 Days
+      </div>
+    </div>
+  </div>
+  <div class="box_two">
+    <div class="box_two__content">
+      <div class="box_two__content__title">
+        Revolution Time
+      </div>
+      <div class="box_two__content__text">
+        1.88 Years
+      </div>
+    </div>
+  </div>
+  <div class="box_three">
+    <div class="box_three__content">
+      <div class="box_three__content__title">
+        Radius
+      </div>
+      <div class="box_three__content__text">
+        3,389.5 KM
+      </div>
+    </div>
+  </div>
+  <div class="box_four">
+    <div class="box_four__content">
+      <div class="box_four__content__title">
+        Average Temp.
+      </div>
+      <div class="box_four__content__text">
+        -28°c
+      </div>
+    </div>
+  
+</div>
+  
+  <script src="app.js"></script>
 </body>
 </html>

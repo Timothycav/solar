@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Lato;
+    src: url('/fonts/SpartanMB-Regular.otf ') format('otf'),
+            url('/fonts/SpartanMB-Regular.otf ') format('otf');
+  }
+
+  html {
+    font-family: SpatanMB-Regular, sans-serif;
+  }
+
 :root {
     --color-white: hsl(0, 0%, 100%);
     --color-dark-blue: hsl(240, 67%, 8%);
@@ -57,19 +67,25 @@ li {
     margin: 1rem 0;
     padding: 0 1rem;
 }
-
+.header__nav a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
 .grid_container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1.9fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
    
-    gap: 1rem;
-    margin: 0 auto;
-    max-width: 90vw;
-    padding: 1rem 0;
+    
 }
 .geopix {
     position: absolute;
-    left: 150px;
+    left: 260px;
     bottom: 260px;
 
     width: 10%;
@@ -81,7 +97,8 @@ li {
 }
 .panels > div {
     padding: 1rem;
-    margin: 2rem;
+    margin-bottom: 1rem;
+  /*  margin: 2rem;*/
    
    
 }
@@ -96,6 +113,42 @@ li {
     background-color: var(--color-purple);
     border: solid 1px var(--color-very-light-grey-2);
     color: var(--color-white);
+}
+.grid_side {
+   
+  min-width: 19rem;
+  
+   margin-right: 8rem;
+   
+}
+.side-text {
+    display: flex;
+    justify-content: start;
+    min-width: 90%;
+    min-height: 90%;
+    margin-bottom: 6rem;
+   }
+
+   .mainEarth, .inpix {
+    margin-left: 12rem;
+   }
+   #marsPix {
+    margin-left: 12rem;
+    margin-top: 4rem;
+  
+   }
+
+.earth-text {
+    
+    font-size: 3.5rem;
+    font-weight: 700;
+   
+   
+}
+.over, .inter, .surface {
+   
+    min-width: 90%;
+    margin-bottom: 6rem;
 }
 .num {
   margin-right: 3rem;
