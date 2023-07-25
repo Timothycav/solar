@@ -117,16 +117,16 @@ li {
 .grid_side {
    
   min-width: 19rem;
-  
-   margin-right: 8rem;
+ 
+  margin-right: 8rem;
    
 }
 .side-text {
     display: flex;
     justify-content: start;
     min-width: 90%;
-    min-height: 90%;
-    margin-bottom: 6rem;
+    min-height: 100%;
+    margin-bottom: 12rem;
    }
 
    .mainEarth, .inpix {
@@ -147,7 +147,7 @@ li {
 }
 .over, .inter, .surface {
    
-    min-width: 90%;
+    min-width: 100%;
     margin-bottom: 6rem;
 }
 .num {
