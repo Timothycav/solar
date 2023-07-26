@@ -5,47 +5,132 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Planets fact site</title>
 </head>
 <body>
-  Neptune
+  <div class="header__container">
+     
+    <div class="header__nav">
+      <ul>
+        <li><a href="/mercury.html">Mercury</a></li>
+        <li><a href="/venus.html">Venus</a></li>
+        <li><a href="/earth.html">Earth</a></li>
+        <li><a href="/mars.html">Mars</a></li>
+        <li><a href="/jupiter.html">Jupiter</a></li>
+        <li><a href="/saturn.html">Saturn</a></li>
+        <li><a href="/uranus.html">Uranus</a></li>
+        <li><a href="/neptune.html">Neptune</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="grid_container">
+    <img src="./assets/planet-neptune.svg"   class="mainEarth" id="marsPix" alt="logo">
+    <img src="./assets/planet-neptune-internal.svg"  class="inpix hide" id="marsPix" alt="logo">
+    <img src="./assets/geology-neptune.png"  class="geopix hide" alt="logo">
 
+    <div class="grid_side">
+        <div class="side_text">
+    <h1 class="earth-text">  Neptune</h1>
   <!-- Overview Content Start -->
 
-  Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar 
-  System, it is the fourth-largest planet by diameter, the third-most-massive planet, 
-  and the densest giant planet. It is 17 times the mass of Earth, more massive than 
-  its near-twin Uranus.
+  <div class="over"> Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar 
+    System, it is the fourth-largest planet by diameter, the third-most-massive planet, 
+    and the densest giant planet. It is 17 times the mass of Earth, more massive than 
+    its near-twin Uranus.
+    <br>
+    Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune -->
+    
+  
+   
+  </div>
+    <!-- Overview Content End -->
+  
+    <!-- Internal Structure Content Start -->
+  
+    <div class="inter hide"> Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% 
+      to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. <br>
+      Increasing concentrations of methane, ammonia and water are found in the lower regions.
+    <br>
+      Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune#Internal_structure --> 
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune -->
-
-  <!-- Overview Content End -->
-
-  <!-- Internal Structure Content Start -->
-
-  Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% 
-  to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. 
-  Increasing concentrations of methane, ammonia and water are found in the lower regions.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune#Internal_structure -->
-
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also 
-  present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in 
-  the red and infrared portion of the spectrum.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune#Atmosphere -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
+  </div>
+    <!-- Internal Structure Content End -->
+  
+    <!-- Surface Geology Content Start -->
+    
+    <div class="surface hide"> Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also 
+      present.<br> Prominent absorption bands of methane exist at wavelengths above 600 nm, in 
+      the red and infrared portion of the spectrum.
+    <br>
+      Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune#Atmosphere -->
+    
+  </div>
+  </div>
+    <!-- Surface Geology Content End -->
+  
+  <div class="panels">
+    <div class="one" onmouseover="myFunction()" >
+    <span class="num">01 </span> 
+    Overview
+    </div>
+  <div class="two" onmousemove="myFunction2()">
+    <span class="num">02 </span> 
+    Internal Structure
+  </div>
+  <div class="three"  onmouseover="myFunction3()" >
+    <span class="num">03 </span>
+    Surface Geology
+  
+  </div>
+  </div>
+</div>
+</div>
+ 
+<div class="end"> 
+  <div class="box_one">
+    <div class="box_one__content">
+      <div class="box_one__content__title">
+        Rotation Time
+      </div>
+      <div class="box_one__content__text">
+        16.08 Hours
+      </div>
+    </div>
+  </div>
+  <div class="box_two">
+    <div class="box_two__content">
+      <div class="box_two__content__title">
+        Revolution Time
+      </div>
+      <div class="box_two__content__text">
+        164.79 Years
+        
+      </div>
+    </div>
+  </div>
+  <div class="box_three">
+    <div class="box_three__content">
+      <div class="box_three__content__title">
+        Radius
+      </div>
+      <div class="box_three__content__text">
+        24,622 KM
+      </div>
+    </div>
+  </div>
+  <div class="box_four">
+    <div class="box_four__content">
+      <div class="box_four__content__title">
+        Average Temp.
+      </div>
+      <div class="box_four__content__text">
+        -201°c
+      </div>
+    </div>
+  
+</div>
+  
   Rotation Time
   16.08 Hours
 
@@ -57,5 +142,6 @@
 
   Average Temp.
   -201°c
+  <script src="app.js"></script>
 </body>
 </html>
