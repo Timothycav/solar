@@ -3,61 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Planets fact site</title>
 </head>
 <body>
-  Saturn
+  <div class="header__container">
+     
+    <div class="header__nav">
+      <ul>
+        <li><a href="/mercury.html">Mercury</a></li>
+        <li><a href="/venus.html">Venus</a></li>
+        <li><a href="/earth.html">Earth</a></li>
+        <li><a href="/mars.html">Mars</a></li>
+        <li><a href="/jupiter.html">Jupiter</a></li>
+        <li><a href="/saturn.html">Saturn</a></li>
+        <li><a href="#">Uranus</a></li>
+        <li><a href="#">Neptune</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="grid_container">
+    <img src="./assets/planet-saturn.svg"   class="mainEarth" id="marsPix" alt="logo">
+    <img src="./assets/planet-saturn-internal.svg"  class="inpix hide" id="marsPix" alt="logo">
+    <img src="./assets/geology-saturn.png"  class="geopix hide" alt="logo">
 
+    <div class="grid_side">
+        <div class="side_text">
+    <h1 class="earth-text"> Saturn</h1>
   <!-- Overview Content Start -->
 
-  Saturn is the sixth planet from the Sun and the second-largest in the Solar 
-  System, after Jupiter. It is a gas giant with an average radius of about 
-  nine and a half times that of Earth. It only has one-eighth the average 
-  density of Earth.
+  <div class="over"> 
+    Saturn is the sixth planet from the Sun and the second-largest in the Solar 
+    System, after Jupiter. It is a gas giant with an average radius of about 
+    nine and a half times that of Earth. <br>It only has one-eighth the average 
+    density of Earth.
+  
+    Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn -->
+    <br>
+  
+  
+  </div>
+    <!-- Overview Content End -->
+  
+    <!-- Internal Structure Content Start -->
+  
+    <div class="inter hide"> Despite consisting mostly of hydrogen and helium, most of Saturn's mass 
+      is not in the gas phase, because hydrogen becomes a non-ideal liquid 
+      when the density is above 0.01 g/cm3, which is reached at a radius 
+      containing 99.9% of Saturn's mass.
+      <br>
+      Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn#Internal_structure -->
+  </div>
+    <!-- Internal Structure Content End -->
+  
+    <!-- Surface Geology Content Start -->
+    
+    <div class="surface hide"> The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% 
+      helium by volume. The planet's most famous feature is its prominent ring 
+      system, which is composed mostly of ice particles with a smaller amount 
+      of rocky debris and dust. 
+      <br>
+      Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn#Atmosphere -->
+    
+  </div>
+  </div>
+    <!-- Surface Geology Content End -->
+  
+  <div class="panels">
+    <div class="one" onmouseover="myFunction()" >
+    <span class="num">01 </span> 
+    Overview
+    </div>
+  <div class="two" onmousemove="myFunction2()">
+    <span class="num">02 </span> 
+    Internal Structure
+  </div>
+  <div class="three"  onmouseover="myFunction3()" >
+    <span class="num">03 </span>
+    Surface Geology
+  
+  </div>
+  </div>
+</div>
+</div>
+<div class="end"> 
+  <div class="box_one">
+    <div class="box_one__content">
+      <div class="box_one__content__title">
+        Rotation Time
+      </div>
+      <div class="box_one__content__text">
+        10.8 Hours
+      </div>
+    </div>
+  </div>
+  <div class="box_two">
+    <div class="box_two__content">
+      <div class="box_two__content__title">
+        Revolution Time
+      </div>
+      <div class="box_two__content__text">
+        29.46 Years
+      </div>
+    </div>
+  </div>
+  <div class="box_three">
+    <div class="box_three__content">
+      <div class="box_three__content__title">
+        Radius
+      </div>
+      <div class="box_three__content__text">
+        58,232 KM
+      </div>
+    </div>
+  </div>
+  <div class="box_four">
+    <div class="box_four__content">
+      <div class="box_four__content__title">
+        Average Temp.
+      </div>
+      <div class="box_four__content__text">
+        -138°c
+      </div>
+    </div>
+  
+</div>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn -->
-
-  <!-- Overview Content End -->
-
-  <!-- Internal Structure Content Start -->
-
-  Despite consisting mostly of hydrogen and helium, most of Saturn's mass 
-  is not in the gas phase, because hydrogen becomes a non-ideal liquid 
-  when the density is above 0.01 g/cm3, which is reached at a radius 
-  containing 99.9% of Saturn's mass.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn#Internal_structure -->
-
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% 
-  helium by volume. The planet's most famous feature is its prominent ring 
-  system, which is composed mostly of ice particles with a smaller amount 
-  of rocky debris and dust. 
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn#Atmosphere -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  10.8 Hours
-
-  Revolution Time
-  29.46 Years
-
-  Radius
-  58,232 KM
-
-  Average Temp.
-  -138°c
+  <script src="app.js"></script>
 </body>
 </html>
